@@ -1,0 +1,13 @@
+{
+  "name": "self",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "index.js"
+  },
+  "dependencies": {
+    "koa": "^0.18.1",
+    "koa-router": "^5.4.0",
+    "koa-static": "^1.4.9"
+  }
+}
