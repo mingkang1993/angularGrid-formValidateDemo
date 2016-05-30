@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<link rel="stylesheet" href="./static/css/common.css">-->
+<!--<link rel="stylesheet" href="./static/css/theme.css">-->
+<link rel="stylesheet" href="./resMin/css/all.min.css">
+
+
+<script src="resMin/js/libs/libs.all.js"></script>
+
+<script src="static/js/app.js"></script>
+
+<script src="static/js/run/run.js"></script>
+<script src="static/js/run/route.js"></script>
+<script src="static/js/run/httpResponse.js"></script>
+
+<script src="static/js/controller.js"></script>
+<script src="static/js/directive.js"></script>
+<script src="static/js/factory.js"></script>
+<script src="static/js/filter.js"></script>
+<script src="static/js/service.js"></script>
+
+
+<script src="static/js/model/common/controller/meunCtr.js"></script>
+<script src="static/js/model/common/model/meunCacheFactory.js"></script>
+
+<script src="static/js/model/grid/controller/gridCtr.js"></script>
+<script src="static/js/model/grid/controller/gridSelectAllCtr.js"></script>
+<script src="static/js/model/grid/model/gridCacheFactory.js"></script>
+
+<script src="static/js/model/formValidate/controller/formValidateCtr.js"></script>
+<!--<script src="static/js/model/grid/model/gridCacheFactory.js"></script>-->
+
+<body ng-controller="mainController">
+    <div ng-include="'view/common/header.html'"></div>
+    <div class="content clearfix shopManager" style="overflow-y: hidden;">
+        <div ng-include="'view/common/meun.html'"></div>
+        <div ui-view="appState" class="main" id="appState">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<div class="pl-20 pr-20">
+    <h1 class="fs-24">gridApi</h1>
+
+
+    <section class="lh-20px mt-40 pl-20">
+        <h3 class="fs-18 mb-10">gridOptions表格参数</h3>
+        <p>method                       ---String               ---- 请求类型,'GET','POST'</p>
+        <p>url                          ---String               ---- 请求的url</p>
+        <p>columnDefs                   ---JSON                 ---- 表格头部参数-映射数据,详情看下面</p>
+        <p>params                       ---Object               ---- 传到后端的参数,默认参数pageNo:1pageSize:10</p>
+        <p>selectAll                    ---Boolean              ---- 是否显示全选,默认false</p>
+        <p>showPage                     ---Boolean              ---- 是否显示分页,默认true</p>
+        <p>data                         ---JSON                 ---- 每页数据</p>
+        <p>selectData                   ---JSON                 ---- 选中的数据</p>
+        <p>paginationCurrentPage        ---number               ---- 当前的page</p>
+        <p>paginationPageSize           ---number               ---- psgeSize</p>
+    </section>
+
+
+    <section class="lh-20px mt-40 pl-20">
+        <h3 class="fs-18 mb-10">columnDefs表格头参数-映射数据</h3>
+        <p>displayName      ---String        ---- 表格的title</p>
+        <p>width            ---String        ---- 表格宽度</p>
+        <p>field            ---String        ---- 数据映射,对应后台返回对应的参数key,优先级最低</p>
+        <p>cellTemplate     ---String        ---- 自定义模版拼接,有row字段,优先级中等</p>
+        <p>filter           ---FN(row)            ---- 前两者都无法满足的时候,可以选用filter,最后需要return出来模版,优先级最高</p>
+    </section>
+
+
+    <section class="lh-20px mt-40 pl-20">
+        <h3 class="fs-18 mb-10">gridCallback</h3>
+        <p>gridOptions.search                         ---FN(Callback,searchOpt)   ---- 表格搜索的时候</p>
+        <p>gridOptions.refresh                        ---FN(Callback)             ---- 刷新当前页面,page不变</p>
+        <p>gridOptions.loadSuccessCallback            ---FN(data)                 ---- 每页数据请求完callback</p>
+        <p>gridOptions.pageSuccessCallback            ---FN(data)                 ---- 每页点击请求完callback</p>
+    </section>
+
+
+    <section class="lh-20px mt-40 pl-20">
+        <h3 class="fs-18 mb-10">后端接受参数</h3>
+        <p>pageNo                        ---number            ---- 页码</p>
+        <p>pageSize                      ---number            ---- 每页条数</p>
+    </section>
+
+</div>

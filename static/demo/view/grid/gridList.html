@@ -1,0 +1,10 @@
+<div class="pl-20 pr-20 pb-10 lh-20px">
+    <span ng-repeat="item in gridOptions.selectData">选中的id---{{item.id}},选中的name---{{item.name}}</span>
+</div>
+
+<div class="ml-10">
+    <button class="btn" ng-click="search()">搜索</button>
+    <button class="btn ml-20" ng-click="getSelectAll()">查询选中的</button>
+</div>
+<div grid="gridOptions" class="pl-10 pr-10 mt-10"></div>
+

@@ -1,0 +1,126 @@
+<div class="pl-20">
+    <div class="mb-20 cor-red fs-14 lh-20 pr-20">*提供校验数据phone、number、price、equalTo、notChinese,校验手机,数字,金额,两端校验,不能为中文,如果以上都不满足,你可以自定义校验,或者使用angular.validateAddMethod方法注入</div>
+
+    <section>
+        <h1 class="fs-18 lh-20px">校验普通表单</h1>
+        <form name="sinceAddEditForm" form-validate>
+            <div>
+                <label class="clearfix h-30px mt-15 d-b">
+                    <div class="f-l w-80px ta-r fw-b">详细地址<i class="cor-red mr-5">*</i>：</div>
+                    <div class="f-l ml-10">
+                        <input type="text" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="getData.address" name="address" validate='{"required":"请输入您的详细地址"}' required>
+                    </div>
+                </label>
+                <label class="clearfix h-30px mt-15 d-b">
+                    <div class="f-l w-80px ta-r fw-b">联系电话<i class="cor-red mr-5">*</i>：</div>
+                    <div class="f-l ml-10">
+                        <input type="text" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="getData.receivePhone" name="receivePhone" validate-type="phone" validate='{"required":"请输入您的联系电话","phone":"您的联系电话格式不对"}' required>
+                    </div>
+                </label>
+                <label class="clearfix h-30px mt-15 d-b">
+                    <div class="f-l w-80px ta-r fw-b">备注信息 ：</div>
+                    <div class="f-l ml-10">
+                        <textarea class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="getData.remark"></textarea>
+                    </div>
+                </label>
+            </div>
+            <div class="mt-20 ta-c">
+                <button class="btn br-5" form-submit="submit()">提交</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h1 class="fs-18 lh-20px mb-20">校验checkbox</h1>
+        <form name="supplyDeleteForm1" form-validate>
+            <label class="d-b">
+                <input type="checkbox" ng-model="getData.reason" class="mr-10" ng-change="checkFn()"><span>选择</span>
+            </label>
+
+            <input type="text" class="d-n pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="getData.reason" name="reason" validate='{"required":"请选择之后在提交"}' required>
+
+            <div class="ta-c mt-20">
+                <a class="d-ib btn search-btn" form-submit="submit()">提交</a>
+            </div>
+        </form>
+    </section>
+
+
+    <section>
+        <h1 class="fs-18 lh-20px mb-20">校验radio</h1>
+        <form name="supplyDeleteForm2" form-validate>
+            <label class="d-b">
+                <input type="radio" ng-model="getData.reason1" value="1" class="mr-10" ><span>选择1</span>
+            </label>
+
+            <label class="d-b mt-10">
+                <input type="radio" ng-model="getData.reason1" value="2" class="mr-10" ><span>选择2</span>
+            </label>
+
+            <input type="text" class="d-n pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="getData.reason1" name="reason1" validate='{"required":"请勾选上面一项"}' required>
+
+            <div class="ta-c mt-20">
+                <a class="d-ib btn search-btn" form-submit="submit()">提交</a>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h1 class="fs-18 lh-20px mb-20">自定义校验</h1>
+        <form name="supplyDeleteForm3" form-validate>
+            <label class="clearfix h-30px mt-15 d-b">
+                <div class="f-l w-100px ta-r fw-b">我是自定义校验 </div>
+                <div class="f-l ml-10">
+                    <textarea class="pt-5 pb-5 pl-10 pr-10 w-250px" name="remark3" ng-model="getData.remark3" ng-pattern="/a-zA-Z/" validate='{"required":"不能为空","pattern":"输入的格式不对"}' required></textarea>
+                </div>
+            </label>
+
+            <div class="ta-c mt-20">
+                <a class="d-ib btn search-btn" form-submit="submit()">提交</a>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h1 class="fs-18 lh-20px mb-20">两端校验</h1>
+        <form name="supplyDeleteForm4" form-validate>
+            <label class="clearfix h-30px mt-15 d-b">
+                <div class="f-l w-80px ta-r fw-b">新密码<i class="cor-red mr-5">*</i>：</div>
+                <div class="f-l ml-10">
+                    <input type="password" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="newPassword" name="newPassword" equal-to="newPassword" validate-type="equalTo" validate='{"required":"请输入您的新密码","equalTo":"两次密码不一致"}' required>
+                </div>
+            </label>
+            <label class="clearfix h-30px mt-15 d-b">
+                <div class="f-l w-80px ta-r fw-b">重复密码<i class="cor-red mr-5">*</i>：</div>
+                <div class="f-l ml-10">
+                    <input type="password" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="regPassword" name="regPassword" id="newPassword" validate='{"required":"请再次输入您的新密码"}' required>
+                </div>
+            </label>
+
+            <div class="ta-c mt-20">
+                <a class="d-ib btn search-btn" form-submit="submit()">提交</a>
+            </div>
+        </form>
+    </section>
+
+
+    <section>
+        <h1 class="fs-18 lh-20px mb-20">勾选才校验</h1>
+        <form name="supplyDeleteForm4" form-validate>
+            <label class="d-b">
+                <input type="checkbox" ng-model="checkedValidate" class="mr-10" ng-change="checkFn()"><span>勾选校验</span>
+            </label>
+            <label class="clearfix h-30px mt-15 d-b">
+                <div class="f-l w-80px ta-r fw-b">名字<i class="cor-red mr-5">*</i>：</div>
+                <div class="f-l ml-10">
+                    <input type="text" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="name" name="name" validate='{"required":"请输入您的新密码","minlength":"密码不少于6位","maxlength":"密码不高于7位"}' ng-required="checkedValidate" ng-minlength="6" ng-maxlength="7">
+                </div>
+            </label>
+
+            <div class="ta-c mt-20">
+                <a class="d-ib btn search-btn" form-submit="submit()">提交</a>
+            </div>
+        </form>
+    </section>
+
+</div>
