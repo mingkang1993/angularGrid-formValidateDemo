@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7c49c3-b983-4de0-a635-0f46e1b82e6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/demo/static/js/model/datetimepicker/controller/datetimepickerDemoCtr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/demo/view/datetimepicker/datetimepickerApi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/demo/view/datetimepicker/datetimepickerDemo.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/areaSelect/china-area-selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/areaSelect/templates.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/confirm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/GulpFile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/css/model/confirm.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/css/model/message.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/confirm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/cookies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/czMobile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/formValidate/formVaildate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/formValidate/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/message.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/util/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/util/throttle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/js/util/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/less/base.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/less/model/confirm.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/dist/less/model/message.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/src/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/src/js/czMobile.all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/czMobile/src/js/czMobile.all.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/datetimepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/grid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/orderGrid/orderGrid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/orderGrid/templates.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/page.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/slide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/util.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/index.html" afterPath="$PROJECT_DIR$/static/demo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/resMin/js/libs/libs.all.js" afterPath="$PROJECT_DIR$/static/demo/resMin/js/libs/libs.all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/resMin/js/libs/libs.all.min.js" afterPath="$PROJECT_DIR$/static/demo/resMin/js/libs/libs.all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/static/js/app.js" afterPath="$PROJECT_DIR$/static/demo/static/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/static/js/model/common/model/meunCacheFactory.js" afterPath="$PROJECT_DIR$/static/demo/static/js/model/common/model/meunCacheFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/static/js/run/route.js" afterPath="$PROJECT_DIR$/static/demo/static/js/run/route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/formValidate/formVaildate.js" afterPath="$PROJECT_DIR$/static/demo/static/js/widget/formValidate/formVaildate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/static/js/widget/formValidate/validate.js" afterPath="$PROJECT_DIR$/static/demo/static/js/widget/formValidate/validate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/demo/view/formValidate/formValidateDemo.html" afterPath="$PROJECT_DIR$/static/demo/view/formValidate/formValidateDemo.html" />
     </list>
     <ignored path="angular-grid-formValiadteDemo.iws" />
@@ -98,8 +60,8 @@
       <file leaf-file-name="ngOptions2.html" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/nodePPT-master/ppts/2016-5-26-demo/view/ngOptions/ngOptions2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="74" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="100">
+              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -108,8 +70,18 @@
       <file leaf-file-name="formValidateDemo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/demo/view/formValidate/formValidateDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="173" column="17" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
+            <state relative-caret-position="55">
+              <caret line="73" column="174" selection-start-line="73" selection-start-column="174" selection-end-line="73" selection-end-column="174" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/demo/static/js/widget/formValidate/validate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -118,21 +90,11 @@
       <file leaf-file-name="formVaildate.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/demo/static/js/widget/formValidate/formVaildate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validate.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/demo/static/js/widget/formValidate/validate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -304,6 +266,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6d7c49c3-b983-4de0-a635-0f46e1b82e6b" name="Default" comment="" />
@@ -314,12 +279,12 @@
       <workItem from="1464604518132" duration="4988000" />
       <workItem from="1464659210604" duration="11024000" />
       <workItem from="1464746079032" duration="1679000" />
-      <workItem from="1464835257713" duration="11580000" />
+      <workItem from="1464835257713" duration="25023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29271000" />
+    <option name="totallyTimeSpent" value="42714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="677" extended-state="0" />
@@ -603,22 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/nodePPT-master/ppts/2016-5-26-demo/view/ngOptions/ngOptions2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="74" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/demo/static/js/widget/formValidate/validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/zhefengleH5/vanwell-shopping-h5/webapp/js/widget/czMobile/dist/js/formValidate/formVaildate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -627,18 +576,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/nodePPT-master/ppts/2016-5-26-demo/view/ngOptions/ngOptions2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/demo/static/js/widget/formValidate/validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/demo/view/formValidate/formValidateDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="173" column="17" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
+        <state relative-caret-position="55">
+          <caret line="73" column="174" selection-start-line="73" selection-start-column="174" selection-end-line="73" selection-end-column="174" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/demo/static/js/widget/formValidate/formVaildate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

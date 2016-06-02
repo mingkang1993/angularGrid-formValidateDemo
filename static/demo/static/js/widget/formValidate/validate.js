@@ -21,6 +21,10 @@ angular.module('cz-form-validate').config(['formValidateConfigProvider',function
             var res = new RegExp(/^\d+(\.\d+)?$/);
             return newVal && res.test(newVal) && newVal > 0;
         },
+        priceUnZero1 : function(newVal){
+            var res = new RegExp(/^\d+(\.\d+)?$/);
+            return newVal && res.test(newVal) && newVal > 0;
+        },
         unZero : function(newVal){
             var res = new RegExp(/^\d+(\.\d+)?$/);
             return newVal > 0;

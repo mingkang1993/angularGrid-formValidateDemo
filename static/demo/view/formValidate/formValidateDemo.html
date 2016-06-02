@@ -167,7 +167,7 @@
         </label>
 
         <label class="d-b mt-10">
-            <input type="checkbox" ng-model="validateNum" class="mr-10"><span>必须数字大于0</span>
+            <input type="checkbox" ng-model="validateNum" class="mr-10"><span>必须为数字</span>
         </label>
 
         <form name="sinceAddEditForm3" form-validate>
@@ -175,7 +175,7 @@
                 <label class="clearfix h-30px mt-15 d-b">
                     <div class="f-l w-80px ta-r fw-b">详细地址<i class="cor-red mr-5">*</i>：</div>
                     <div class="f-l ml-10">
-                        <input type="text" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="address2121" name="address2121" validate-type='{"chinese" : {{validateChinese || false}},"priceUnZero1" : true' validate='{"required":"请输入您的详细地址","chinese":"请输入中文","priceUnZero1":"必须大于0"}' required>
+                        <input type="text" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="address21221" name="address21221" validate-type='{"chinese":{{validateChinese || false}},"price":{{validateNum || false}}}' validate='{"required":"请输入您的详细地址","chinese":"请输入中文","price":"必须输入数字"}' required>
                     </div>
                 </label>
 
