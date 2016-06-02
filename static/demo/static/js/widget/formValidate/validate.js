@@ -3,9 +3,8 @@
  *
  * 这里是校验公众的数据类型
  */
-
-;(function(angular){
-    angular.validateAddMethod = {
+angular.module('cz-form-validate').config(['formValidateConfigProvider',function(formValidateConfigProvider) {
+    formValidateConfigProvider.provideRule({
         phone : function(newVal){  //验证手机
             var res = new RegExp(/^1[3578][0-9]{9}$/);
             return newVal && res.test(newVal);
@@ -22,6 +21,10 @@
             var res = new RegExp(/^\d+(\.\d+)?$/);
             return newVal && res.test(newVal) && newVal > 0;
         },
+        unZero : function(newVal){
+            var res = new RegExp(/^\d+(\.\d+)?$/);
+            return newVal > 0;
+        },
         equalTo : function(newVal,$elm){ //两端绑定
             var tarElm = function(){
                 var id = $elm.attr('equal-to');
@@ -29,12 +32,16 @@
             }();
             return tarElm.value == newVal;
         },
+        chinese : function(newVal){
+            var res = new RegExp(/[\u4e00-\u9fa5]+/);
+            return newVal && res.test(newVal);
+        },
         notChinese : function(newVal){
             var res = new RegExp(/[\u4e00-\u9fa5]+/);
             return newVal && !res.test(newVal);
         }
-    };
-})(angular);
+    });
+}]);
 
 
 //rule.phone = function(){

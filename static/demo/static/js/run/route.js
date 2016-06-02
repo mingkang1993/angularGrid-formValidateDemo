@@ -28,7 +28,9 @@
         {name : 'gridApi', url: '/gridApi.html',templateUrl:'/demo/view/grid/gridApi.html', controller: '',pageRp:3},
 
         {name : 'formValidate/demo', url: '/formValidate/demo.html',templateUrl:'/demo/view/formValidate/formValidateDemo.html', controller: 'formValidateDemoCtr',pageRp:4},
-        {name : 'formValidate/api', url: '/formValidate/api.html',templateUrl:'/demo/view/formValidate/formValidateApi.html', controller: '',pageRp:5}
+        {name : 'formValidate/api', url: '/formValidate/api.html',templateUrl:'/demo/view/formValidate/formValidateApi.html', controller: '',pageRp:5},
+
+        {name : 'datetimepicker/demo', url: '/datetimepicker/demo.html',templateUrl:'/demo/view/datetimepicker/datetimepickerDemo.html', controller: 'datetimepickerDemoCtr',pageRp:6}
     ];
 
     app.config(['$stateProvider','$urlRouterProvider','$httpProvider',function($stateProvider, $urlRouterProvider,$httpProvider) {

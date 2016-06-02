@@ -123,4 +123,66 @@
         </form>
     </section>
 
+
+    <section>
+        <h1 class="fs-18 lh-20px">多规则校验1</h1>
+        <form name="sinceAddEditForm1" form-validate>
+            <div>
+                <label class="clearfix h-30px mt-15 d-b">
+                    <div class="f-l w-80px ta-r fw-b">详细地址<i class="cor-red mr-5">*</i>：</div>
+                    <div class="f-l ml-10">
+                        <input type="text" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="address2121" name="address2121" validate-type='{"chinese" : true,"priceUnZero1" : true}' validate='{"required":"请输入您的详细地址","chinese":"请输入中文","priceUnZero1":"必须大于0"}' required>
+                    </div>
+                </label>
+
+            </div>
+            <div class="mt-20 ta-c">
+                <button class="btn br-5" form-submit="submit()">提交</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h1 class="fs-18 lh-20px">多规则校验2</h1>
+        <form name="sinceAddEditForm2" form-validate>
+            <div>
+                <label class="clearfix h-30px mt-15 d-b">
+                    <div class="f-l w-80px ta-r fw-b">详细地址<i class="cor-red mr-5">*</i>：</div>
+                    <div class="f-l ml-10">
+                        <input type="text" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="address212221" name="address212221" validate-type='chinese,priceUnZero1' validate='{"required":"请输入您的详细地址","chinese":"请输入中文","priceUnZero1":"必须大于0"}' required>
+                    </div>
+                </label>
+
+            </div>
+            <div class="mt-20 ta-c">
+                <button class="btn br-5" form-submit="submit()">提交</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h1 class="fs-18 lh-20px">多规则校验选择</h1>
+        <label class="d-b mt-10">
+            <input type="checkbox" ng-model="validateChinese" class="mr-10"><span>必须校验中文</span>
+        </label>
+
+        <label class="d-b mt-10">
+            <input type="checkbox" ng-model="validateNum" class="mr-10"><span>必须数字大于0</span>
+        </label>
+
+        <form name="sinceAddEditForm3" form-validate>
+            <div>
+                <label class="clearfix h-30px mt-15 d-b">
+                    <div class="f-l w-80px ta-r fw-b">详细地址<i class="cor-red mr-5">*</i>：</div>
+                    <div class="f-l ml-10">
+                        <input type="text" class="pt-5 pb-5 pl-10 pr-10 w-250px" ng-model="address2121" name="address2121" validate-type='{"chinese" : {{validateChinese || false}},"priceUnZero1" : true' validate='{"required":"请输入您的详细地址","chinese":"请输入中文","priceUnZero1":"必须大于0"}' required>
+                    </div>
+                </label>
+
+            </div>
+            <div class="mt-20 ta-c">
+                <button class="btn br-5" form-submit="submit()">提交</button>
+            </div>
+        </form>
+    </section>
 </div>

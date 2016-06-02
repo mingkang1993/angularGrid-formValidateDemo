@@ -5,7 +5,8 @@ var app = angular.module('app', [
     'datetimepicker',
     'ngDialog',
     'hipacPage',
-    'cz-mobile'
+    'cz-mobile',
+    'cz-form-validate'
 ],['$compileProvider','$locationProvider',function($compileProvider,$locationProvider){
     // $locationProvider.html5Mode(true).hashPrefix('!');
     $compileProvider.aHrefSanitizationWhitelist(/^\s*((https?|ftp|tel|sms|mailto|file|javascript|chrome-extension):)|#/);
