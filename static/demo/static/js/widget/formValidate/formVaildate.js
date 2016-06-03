@@ -50,13 +50,16 @@
         }
 
         function validateItem(newVal,ngModelCtrl,validateObj,elm){   //负责校验每个单独元素规则
+            var isFindError = false;
+
             for(var rulesName in validateObj){
                 var test = rule[rulesName](newVal,elm);
-
+                ngModelCtrl.$setValidity(rulesName, true);   //默认为空不校验,让他默认显示空提示
                 if(newVal && validateObj[rulesName]){
-                    ngModelCtrl.$setValidity(rulesName, test);
-                }else{
-                    ngModelCtrl.$setValidity(rulesName, true);   //默认为空不校验,让他默认显示空提示
+                    if(!isFindError && !test){   //如果他已经显示了错误信息 默认不校验,接下去全成功
+                        ngModelCtrl.$setValidity(rulesName, test);
+                        isFindError = true;
+                    }
                 }
             }
         }
@@ -106,7 +109,7 @@
                 }else{
                     for(var n in scope.validate){
                         ngModelCtrl.$setValidity(n, false);
-                        elm.after($compile('<div class="error" ng-show="'+ formName +'.'+ elmName +'.$error.'+ n +' && '+ formName +'.formVaild">'+ scope.validate[n] +'</div>')(formCtrl.formCrt))
+                        elm.after($compile('<div class="error '+ opt.errorClass +'" ng-show="'+ formName +'.'+ elmName +'.$error.'+ n +' && '+ formName +'.formVaild">'+ scope.validate[n] +'</div>')(formCtrl.formCrt))
                     }
                 }
             }
